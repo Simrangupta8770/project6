@@ -1,0 +1,165 @@
+*{
+    margin:0;
+    padding:0;
+}
+html,body{
+    margin:0;
+    padding:0;
+    width:100%;
+
+}
+.head{
+    position: relative;
+}
+.head:before{
+    content: '';
+    position: absolute;
+    height:100px;
+    bottom: -50px;
+    left:0;
+    right:0;
+    background-color:rgb(252, 253, 253);
+   border-radius: 0 0 50% 50%;
+
+}
+.container1{
+   
+    position:relative;
+}
+
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008bba9a;
+    padding:20px;
+  }
+  
+  .container1:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .content:before
+{
+    content: '';
+    position: absolute;
+    height:100px;
+    bottom: -530px;
+    left:0;
+    right:0;
+    background-color:rgb(212, 253, 253);
+   border-radius: 0 0 50% 50%;
+
+}
+.svg{
+    width:100%;
+    position: relative;
+     bottom:98px;
+    height: 4rem; 
+}
+.card-nav{
+    border: none;
+}
+.image-set:before
+{
+    content: '';
+    position:absolute;
+    height:100px;
+    bottom: -1900px;
+    left:0;
+    right:0;
+    background-color:rgb(252, 249, 249);
+   border-radius: 0 0 50% 50%;
+
+}
+
+.list-unstyled a{
+text-decoration: none;
+color:grey;
+}
+.list-unstyled a:hover{
+text-decoration: underline;
+    }
+.settings{
+    right:0;
+    position:fixed;
+    top:20%;
+    z-index:1;
+}
+.setting svg{
+    animation-name:rotateIcon;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+}
+@keyframes rotateIcon{
+    0%{
+        transform:rotate(180deg);
+    }
+    100%{
+        transform:rotate(360deg);
+
+    }
+}
+    /* navbar and footer */
+    .card-nav{
+        min-width:600px;
+        left:-100%;
+    
+    }
+    .navbar-light .navbar-toggler{
+        border:none;
+    }
+    .navbar-toggler:focus{
+        outline: none;
+    }
+    .dropdown-toggle:focus{
+     color:black;
+     font-weight: bold;
+     border: 0;
+    }
+    .btn-check:focus+.btn, .btn:focus{
+        border:0;
+    }
+    
+   
+    @media(max-width:1200px){
+        .navbar-nav .dropdown-menu{
+          position:absolute;
+          
+        }
+        .navbar-nav .card-nav{
+           min-width:200px;
+            left: 0;
+            right:0;
+        }
+        .nav-lists{
+            text-align: center;
+        }
+        .image-set:before,.svg,.content:before,.head:before{
+            display: none;
+        }
+    }
+    
