@@ -1,11 +1,14 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 html,body{
     margin:0;
     padding:0;
     width:100%;
+    box-sizing: border-box;
+    
 
 }
 .head{
@@ -77,6 +80,9 @@ text-decoration: underline;
     animation-iteration-count: infinite;
     animation-duration: 1.5s;
 }
+.header-contain .header{
+    min-width:15rem;
+}
 @keyframes rotateIcon{
     0%{
         transform:rotate(180deg);
@@ -122,33 +128,14 @@ text-decoration: underline;
             text-align: center;
         }
         
-        .header{
-            padding-left: 10%;
-        }
+      
     }
-    @media(max-width:994px){
+  @media(max-width:350px){
+   
+    .header-contain{
+        overflow: hidden;
+    }  
     .header{
-        padding-left: 5%;
-    }
-    }
-    @media(max-width:768px){
-    .header{
-        min-width:350px;
-        align-self:center;
-        margin-left: 20%;
-    }
-    }
-    @media(max-width:500px){
-        .header{
-        width:150px;
-        margin: 0;
-        padding-left: 15%;
-}
-    }
-    @media(max-width:400px){
-        .header{
-        width:150px;
-        margin: 0;
-        padding-right: 8%;
-}
-    }
+         padding-right: 10%;
+      }
+  }
